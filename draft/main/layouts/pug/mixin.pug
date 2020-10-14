@@ -1,0 +1,23 @@
+//- навигация
+mixin nav(name, link)
+    a(href=link)=name
+
+//- раскрывающийся список
+mixin select(name,link,first)
+    if(first)
+        option(value=link disabled selected)=name
+    else
+        option(value=link)=name
+
+//- кнопка
+mixin but(name)
+    form
+        button=name
+
+//- ссылки на соцсети
+mixin smm(link,imageLink,alt)
+    a(href=link)
+        img(src=imageLink alt=alt)
+
+//- поле ввода формы
+    mixin inp(type,placeholder,)
