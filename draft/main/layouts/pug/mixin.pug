@@ -14,6 +14,10 @@ mixin but(name)
     form
         button=name
 
+//- изображение
+mixin image(src,alt)
+    img(src=src alt=alt)
+    
 //- ссылки на соцсети
 mixin smm(link,imageLink,alt)
     a(href=link)

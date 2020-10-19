@@ -33,8 +33,9 @@ module.exports = {
             template: path.resolve (__dirname, './draft/main/uikit/header/header.pug')
         }),
         new HTMLWebpackPlugin({
-            filename: 'footer.html',
-            template: path.resolve (__dirname, './draft/main/uikit/footer/footer.pug')
+            //создаваемый хтмл будет основан на конкретном
+            filename: 'check.html',
+            template: path.resolve (__dirname, './draft/check.pug')
         }),
         //чистит папку dist
         new CleanWebpackPlugin,
