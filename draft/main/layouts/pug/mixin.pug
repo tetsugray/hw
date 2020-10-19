@@ -19,9 +19,9 @@ mixin image(src,alt)
     img(src=src alt=alt)
     
 //- ссылки на соцсети
-mixin smm(link,imageLink,alt)
+mixin smm(link,src,alt)
     a(href=link)
-        img(src=imageLink alt=alt)
+        img(src=src alt=alt)
 
 //- поле ввода формы
     mixin inp(type,placeholder,)
