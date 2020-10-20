@@ -1,10 +1,11 @@
 .footer__creative {
   width: 768px;
-  background-color: gray;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 0px 120px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 50px;
 }
 
 .logo {
@@ -30,9 +31,8 @@
 body {
   max-width: 1920px;
   min-width: 320px;
-  background-color: #c2b9b9;
   padding: 0;
   border: 0;
-  margin: 0 auto;
+  margin: 0;
   font-size: 14px;
 }
