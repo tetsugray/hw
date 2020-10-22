@@ -5,7 +5,6 @@
   align-items: center;
   padding: 120px 0px 120px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: 50px;
 }
 
 .logo {
@@ -18,7 +17,9 @@
 
 .copyright {
   width: 560px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
   margin-bottom: 10px;
 }
 
@@ -28,6 +29,22 @@
   justify-content: space-between;
 }
 
+@font-face {
+  font-family: "quicksand";
+  src: url(558969494c5e2743f1cfa118be49249c.woff) format("woff");
+  src: url(6ec831c0524b62c60774cdd2f23d21b4.ttf) format("truetype");
+  src: url(b8e520864fc6a91e23e9c0d9a740e318.svg) format("svg");
+}
+@font-face {
+  font-family: "opensans";
+  src: url(347639ec49f4b2884a9657afded83ace.woff) format("woff");
+  src: url(cf6a34547195e0972978eab2aa4d2fb2.ttf) format("truetype");
+  src: url(1d0d8b66fa1da76d69b95b6d0ed5cca9.svg) format("svg");
+}
+@font-face {
+  font-family: "os";
+  src: url(1b0809d519837cb7aad36a73433f655c.ttf);
+}
 body {
   max-width: 1920px;
   min-width: 320px;
@@ -35,4 +52,8 @@ body {
   border: 0;
   margin: 0;
   font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  font-family: "quicksand", "os";
+  color: rgba(31, 32, 65, 0.75);
 }
