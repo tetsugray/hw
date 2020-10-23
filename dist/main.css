@@ -28,15 +28,6 @@
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: "opensans";
-  src: url(1b0809d519837cb7aad36a73433f655c.ttf);
-  src: url(469db7e601bc2bc9cce399bb74d940be.woff);
-  src: url(81a6c4e3ea91faf749caf89d2d1c803e.svg);
-}
->>>>>>> 48b3d96... check
 body {
   max-width: 1920px;
   min-width: 320px;
@@ -44,8 +35,5 @@ body {
   border: 0;
   margin: 0;
   font-size: 14px;
-<<<<<<< HEAD
-=======
   font-family: "opensans";
->>>>>>> 48b3d96... check
 }
