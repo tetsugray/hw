@@ -1,5 +1,8 @@
-@import '/src/blocks/footer/footer.scss';
 @import '/src/fonts/fonts.scss';
+
+@import '/src/blocks/footer/__creative/footer__creative.scss';
+@import '/src/blocks/footer/footer.scss';
+
 
 body {
     max-width: 1920px;
