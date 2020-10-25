@@ -11,7 +11,7 @@ module.exports = {
     context: path.resolve(__dirname),
     mode: 'development',
     //стартовый файл, откуда начать
-    entry: './draft/js/index.js', 
+    entry: './js/index.js', 
     output: {
         //куда вывести результат
         filename: 'bundle.js',
@@ -29,13 +29,8 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             //создаваемый хтмл будет основан на конкретном
-            filename: 'header.html',
-            template: path.resolve (__dirname, './draft/main/uikit/header/header.pug')
-        }),
-        new HTMLWebpackPlugin({
-            //создаваемый хтмл будет основан на конкретном
             filename: 'check.html',
-            template: path.resolve (__dirname, './draft/check.pug')
+            template: path.resolve(__dirname, './src/test/check.pug')
         }),
         //чистит папку dist
         new CleanWebpackPlugin,
@@ -68,7 +63,7 @@ module.exports = {
                     loader: 'pug-loader',
                     options: {
                         pretty: true,
-                        root: __dirname
+                        root: path.resolve(__dirname)
                     }
                 }]
             }

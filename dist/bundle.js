@@ -81,31 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./draft/js/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./draft/js/index.js":
-/*!***************************!*\
-  !*** ./draft/js/index.js ***!
-  \***************************/
+/***/ "./js/index.js":
+/*!*********************!*\
+  !*** ./js/index.js ***!
+  \*********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var root_draft_main_style_common_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! root/draft/main/style/common.scss */ \"./draft/main/style/common.scss\");\n/* harmony import */ var root_draft_main_style_common_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(root_draft_main_style_common_scss__WEBPACK_IMPORTED_MODULE_0__);\n//- import 'root/draft/main/layouts/scss/logo.scss'\r\n\r\n\n\n//# sourceURL=webpack:///./draft/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! root/src/layouts/scss/common.scss */ \"./src/layouts/scss/common.scss\");\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
-/***/ "./draft/main/style/common.scss":
+/***/ "./src/layouts/scss/common.scss":
 /*!**************************************!*\
-  !*** ./draft/main/style/common.scss ***!
+  !*** ./src/layouts/scss/common.scss ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./draft/main/style/common.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/layouts/scss/common.scss?");
 
 /***/ })
 

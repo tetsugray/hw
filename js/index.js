@@ -1,2 +1,1 @@
-//- import 'root/draft/main/layouts/scss/logo.scss'
-import 'root/draft/main/style/common.scss'
+import 'root/src/layouts/scss/common.scss'
