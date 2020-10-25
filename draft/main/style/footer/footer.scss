@@ -16,8 +16,13 @@
 }
 .copyright {
     width: 560px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
     margin-bottom: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: rgba(31, 32, 65, 0.75);
 }
 .smm {
     width: 110px;
