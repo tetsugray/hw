@@ -1,6 +1,9 @@
 div.footer
-    include /src/blocks/footer/__logo/footer__logo.pug
-    include /src/blocks/footer/__navigation/footer__navigation.pug
-div.footer_copyright
-    include /src/blocks/footer/__copyright/footer__copyright.pug
-    include /src/blocks/footer/__smm/footer__smm.pug
+    div.footer__navigation
+        div.footer__logo
+            include /src/blocks/footer/__logo/footer__logo.pug
+        include /src/blocks/footer/__navigation/footer__navigation.pug
+    div.footer__copyright
+        include /src/blocks/footer/__copyright/footer__copyright.pug
+        div.footer__smm
+            include /src/blocks/footer/__smm/footer__smm.pug

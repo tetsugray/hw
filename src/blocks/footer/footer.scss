@@ -1,0 +1,11 @@
+@import '/src/blocks/footer/__copyright/footer__copyright.scss';
+@import '/src/blocks/footer/__logo/footer__logo.scss';
+@import '/src/blocks/footer/__navigation/footer__navigation.scss';
+@import '/src/blocks/footer/__smm/footer__smm.scss';
+
+.footer {
+    width: 1440px;
+    //- padding: 0px 140px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+}

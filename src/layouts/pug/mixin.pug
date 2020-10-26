@@ -1,6 +1,8 @@
 //- навигация
 mixin nav(name, link)
-    a(href=link)=name
+    ul
+        li
+            a(href=link)=name
 
 //- раскрывающийся список
 mixin select(name,link,first)
