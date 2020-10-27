@@ -1,0 +1,11 @@
+.footer__navigation_list {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-size: 12px;
+    };
+    a {
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+    }
+}
