@@ -45,6 +45,7 @@
 .footer__copyright_text {
   width: 367px;
   text-align: justify;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .footer__copyright {
@@ -88,6 +89,26 @@
   color: #1f2041;
 }
 
+.footer__navigation_form {
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  height: 44px;
+}
+.footer__navigation_form input {
+  width: 216px;
+  height: 44px;
+  border: 1 solid rgba(31, 32, 65, 0.25);
+  border-right: none;
+}
+.footer__navigation_form button {
+  width: 44px;
+  height: 44px;
+  border: 1 solid rgba(31, 32, 65, 0.25);
+  border-left: none;
+  background-color: white;
+}
+
 .footer__navigation {
   display: flex;
   flex-direction: row;
@@ -112,7 +133,6 @@
 body {
   max-width: 1920px;
   min-width: 320px;
-  background-color: #c2b9b9;
   padding: 0;
   border: 0;
   margin: 0;

@@ -1,0 +1,20 @@
+.footer__navigation_form {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 44px;
+    //- border: 1 solid rgba(31, 32, 65, 0.25);
+    input {
+        width: 216px;
+        height: 44px;
+        border: 1 solid rgba(31, 32, 65, 0.25);
+        border-right: none;
+    };
+    button {
+        width: 44px;
+        height: 44px;
+        border: 1 solid rgba(31, 32, 65, 0.25);
+        border-left: none;
+        background-color: white;
+    }
+}
