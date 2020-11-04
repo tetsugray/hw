@@ -1,8 +1,18 @@
 .footer__navigation_list {
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    padding: 0;
     h2 {
+        font-family: 'Montserrat';
+        font-weight: bold;
         font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
     };
     a {
         color: rgba(31, 32, 65, 0.5);

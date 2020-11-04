@@ -1,7 +1,9 @@
+@import '/src/blocks/footer/__logo/_text/footer__logo_text.scss';
+
 .footer__logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 106px;
-    margin-bottom: 10px;
+    
 }

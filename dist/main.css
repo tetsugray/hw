@@ -45,6 +45,9 @@
 .footer__copyright_text {
   width: 367px;
   text-align: justify;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
 }
 
@@ -56,6 +59,14 @@
   padding: 14px 130px 10px 140px;
 }
 
+.footer__logo_text {
+  width: 260px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .footer__logo {
   display: flex;
   align-items: center;
@@ -64,24 +75,62 @@
   margin-bottom: 10px;
 }
 
-.footer__logo_text {
+.footer__navigation_form {
+  display: flex;
   width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.footer__navigation_form input {
+  border: none;
+  width: 216px;
+}
+.footer__navigation_form button {
+  border: none;
+  height: 44px;
+  background-color: white;
+}
+.footer__navigation_form input::placeholder {
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 12px;
 }
 
 .footer__navigation_list {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 .footer__navigation_list h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }
 .footer__navigation_list a {
   color: rgba(31, 32, 65, 0.5);
   text-decoration: none;
 }
 
+.footer__navigation_text {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: Montserrat;
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .footer__navigation_subs {
-  width: 260px;
+  display: flex;
+  flex-direction: column;
   color: rgba(31, 32, 65, 0.5);
 }
 .footer__navigation_subs h2 {
@@ -89,31 +138,15 @@
   color: #1f2041;
 }
 
-.footer__navigation_form {
-  display: flex;
-  justify-content: center;
+.footer__navigation_text {
   width: 260px;
-  height: 44px;
-}
-.footer__navigation_form input {
-  width: 216px;
-  height: 44px;
-  border: 1 solid rgba(31, 32, 65, 0.25);
-  border-right: none;
-}
-.footer__navigation_form button {
-  width: 44px;
-  height: 44px;
-  border: 1 solid rgba(31, 32, 65, 0.25);
-  border-left: none;
-  background-color: white;
 }
 
 .footer__navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 94px 140px 94px;
+  padding: 92px 140px 100px;
 }
 
 .footer__smm {
@@ -133,6 +166,7 @@
 body {
   max-width: 1920px;
   min-width: 320px;
+  background-color: #c2b9b9;
   padding: 0;
   border: 0;
   margin: 0;

@@ -1,6 +1,11 @@
+@import '/src/blocks/footer/__navigation/_form/footer__navigation_form.scss';
+@import '/src/blocks/footer/__navigation/_list/footer__navigation_list.scss';
+@import '/src/blocks/footer/__navigation/_text/footer__navigation_text.scss';
+@import '/src/blocks/footer/__navigation/subs/footer__navigation_subs.scss';
+
 .footer__navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 94px 140px 94px;
+    padding: 92px 140px 100px;
 }

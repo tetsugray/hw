@@ -1,20 +1,25 @@
 .footer__navigation_form {
     display: flex;
-    justify-content: center;
     width: 260px;
     height: 44px;
-    //- border: 1 solid rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    //- margin-top: 10px;
     input {
+        border: none;
         width: 216px;
-        height: 44px;
-        border: 1 solid rgba(31, 32, 65, 0.25);
-        border-right: none;
     };
     button {
-        width: 44px;
+        border: none;
         height: 44px;
-        border: 1 solid rgba(31, 32, 65, 0.25);
-        border-left: none;
         background-color: white;
+    }
+    input::placeholder {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.25);
+        //vertical-align: top;
+        padding-left: 12px;
     }
 }

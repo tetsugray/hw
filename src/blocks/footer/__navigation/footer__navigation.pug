@@ -2,13 +2,9 @@ include /src/layouts/pug/mixin.pug
 
 div.footer__navigation_list
     h2 НАВИГАЦИЯ
-    br
     +nav('О нас','#')
-    br
     +nav('Новости','#')
-    br
     +nav('Служба поддержки','#')
-    br
     +nav('Услуги','#')
 
 div.footer__navigation_list
@@ -32,11 +28,11 @@ div.footer__navigation_list
     +nav('Связь с нами','#')
 
 div.footer__navigation_subs
-    h2 ПОДПИСКА
-    br
-    |Получайте специальные предложения и новости сервиса
-div.footer__navigation_form
-    form(name='subscription')
-        input(type='text' placeholder='E-mail' required)
-        button
-            img(src='/src/images/svg/arrow.svg')
+    div.footer__navigation_text
+        h2 ПОДПИСКА
+        p Получайте специальные предложения и новости сервиса
+    div.footer__navigation_form
+        form(name='subscription')
+            input(type='text' placeholder='Email' required)
+            button
+                img(src='/src/images/svg/arrow.svg')
