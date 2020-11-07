@@ -65,14 +65,15 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  padding-top: 3px;
 }
 
 .footer__logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 106px;
-  margin-bottom: 10px;
 }
 
 .footer__navigation_form {
@@ -102,11 +103,10 @@
 .footer__navigation_list {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   font-family: "Montserrat";
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 20px;
-  padding: 0;
 }
 .footer__navigation_list h2 {
   font-family: "Montserrat";
@@ -119,6 +119,9 @@
 .footer__navigation_list a {
   color: rgba(31, 32, 65, 0.5);
   text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .footer__navigation_text {
@@ -145,8 +148,8 @@
 .footer__navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 92px 140px 100px;
+  justify-content: space-around;
+  padding: 100px 110px 100px;
 }
 
 .footer__smm {
