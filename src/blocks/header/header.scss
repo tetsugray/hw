@@ -1,1 +1,13 @@
-@import './draft/style/buttons/sm.scss'
+@import '/src/blocks/header/__logo/header__logo.scss';
+@import '/src/blocks/header/__navigation/header__navigation.scss';
+@import '/src/blocks/header/__user/_auth/header__user_auth.scss';
+@import '/src/blocks/header/__user/_nonauth/header__user_nonauth.scss';
+
+.header {
+    width: 1440px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

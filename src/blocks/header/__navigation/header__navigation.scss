@@ -1,0 +1,24 @@
+.header__navigation {
+    width: 447px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-left: 285px;
+    padding-right: 20px;
+
+    select {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 17px;
+    };
+
+    a {
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
