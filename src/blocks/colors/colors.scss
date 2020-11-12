@@ -1,17 +1,35 @@
+.colors {
+    display: flex;
+    flex-direction: row;
+}
 .colors__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 159px;
-    font-size: 19px;
+    line-height: 10px;
+    p {
+        font-family: 'Quicksand';
+        font-size: 19px;
+        margin-bottom: 33px;
+    }
+    h2 {
+        font-family: 'Quicksand';
+        font-style: bold;
+        font-size: 19px;
+    }
+}
+.colors__type {
+    display: flex;
+    flex-direction: column;
+    
 }
 .colors__square {
     width: 70px;
     height: 70px;
     border-radius: 6px;
+    margin-bottom: 20px;
     margin-right: 40px;
-}
-.colors__type {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
 }
 .colors__square_dark100 {
     background-color: rgba(31, 32, 65, 1);

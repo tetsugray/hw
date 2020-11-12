@@ -1,0 +1,38 @@
+.type {
+    display: flex;
+    flex-direction: row;
+    width: 403px;
+    height: 321px;
+    margin: 50px;
+}
+.type__text_headlines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+    font-family: 'Quicksand';
+    color: rgba(31, 32, 65, 0.25);
+}
+.type__text_example {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Quicksand';
+    color: #1F2041;
+}
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 19px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 12px;
+}
+p {
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.75);
+}
