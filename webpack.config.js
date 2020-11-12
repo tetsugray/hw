@@ -1,8 +1,8 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-//const mainDir = path.resolve(__dirname, 'fsd')
 //const cssLoader = () => {}
 //поставить devserver и babel!
 
@@ -11,7 +11,7 @@ module.exports = {
     context: path.resolve(__dirname),
     mode: 'development',
     //стартовый файл, откуда начать
-    entry: './js/index.js', 
+    entry: './js/index.js',
     output: {
         //куда вывести результат
         filename: 'bundle.js',
@@ -37,7 +37,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css'
-        })
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            jquery: 'jquery'
+          }),
     ],
     module: {
         rules: [
@@ -66,7 +71,7 @@ module.exports = {
                         root: path.resolve(__dirname)
                     }
                 }]
-            }
+            },
         ]
     }
 }

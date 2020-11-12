@@ -1,13 +1,13 @@
 include /src/layouts/pug/mixin.pug
 
 +nav('О нас','#')
-select(onchange="window.location.href=value")
+select(class='usl' onchange='window.location.href=value')
     +select('Услуги', '#', true)
     +select('1', '#')
     +select('2', '#')
 +nav('Вакансии','#')
 +nav('Новости','#')
-select(onchange="window.location.href=value")
+select(class='sogl' onchange='window.location.href=value')
     +select('Соглашения', '#', true)
     +select('1', '#')
     +select('2', '#')

@@ -1,1 +1,4 @@
-import 'root/src/layouts/scss/common.scss'
+
+//импорт стилей
+import 'root/src/layouts/scss/common.scss';
+ 

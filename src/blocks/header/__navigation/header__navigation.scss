@@ -8,10 +8,17 @@
     padding-right: 20px;
 
     select {
+        display: flex;
+        flex-direction: column;
         color: rgba(31, 32, 65, 0.5);
         font-family: 'Montserrat';
         font-size: 14px;
         line-height: 17px;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     };
 
     a {

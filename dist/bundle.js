@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! root/src/layouts/scss/common.scss */ \"./src/layouts/scss/common.scss\");\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! root/src/layouts/scss/common.scss */ \"./src/layouts/scss/common.scss\");\n/* harmony import */ var root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(root_src_layouts_scss_common_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n//импорт стилей\r\n\r\n \n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 

@@ -1,12 +1,16 @@
 @import '/src/fonts/fonts.scss';
 
+@import '/src/blocks/colors/colors.scss';
+
 @import '/src/blocks/footer/__creative/footer__creative.scss';
 @import '/src/blocks/footer/footer.scss';
 
 @import '/src/blocks/header/header.scss';
 
+@import '/src/test/nice/stb.dropdown.css';
+@import '/src/test/nice/stb.dropdown.min.css';
 
-body {
+/*body {
     max-width: 1920px;
     min-width: 320px;
     background-color: #c2b9b9;
@@ -15,4 +19,4 @@ body {
     margin: 0;
     font-size: 14px;
     font-family: 'Montserrat';
-}
+}*/

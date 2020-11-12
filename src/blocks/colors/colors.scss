@@ -1,0 +1,36 @@
+.colors__text {
+    width: 159px;
+    font-size: 19px;
+}
+.colors__square {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+.colors__type {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.colors__square_dark100 {
+    background-color: rgba(31, 32, 65, 1);
+}
+.colors__square_dark75 {
+    background-color: rgba(31, 32, 65, 0.75);
+}
+.colors__square_dark50 {
+    background-color: rgba(31, 32, 65, 0.50);
+}
+.colors__square_dark25 {
+    background-color: rgba(31, 32, 65, 0.25);
+}
+.colors__square_dark5 {
+    background-color: rgba(31, 32, 65, 0.05);
+}
+.colors__square_purple {
+    background-color: #BC9CFF;
+}
+.colors__square_green {
+    background-color: #6FCF97;
+}
