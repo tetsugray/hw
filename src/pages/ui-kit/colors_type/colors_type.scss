@@ -1,0 +1,24 @@
+@import '/src/blocks/colors/colors.scss';
+@import '/src/blocks/type/type.scss';
+
+.colors_type {
+    width: 1440px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+}
+.colors_type_logo {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.colors_type_type {
+    display: flex;
+    align-self: flex-start;
+}
+.colors_type_main {
+    height: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 67px 191px 145px 150px;
+}
