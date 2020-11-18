@@ -10,15 +10,10 @@
     padding-top: 30px;
     padding-left: 30px;
 }
-.colors_type_type {
-    display: flex;
-    align-self: flex-start;
-}
 .colors_type_main {
-    height: 610px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    margin: 67px 191px 145px 150px;
+    align-items: flex-start;
+    padding: 67px 191px 130px 150px;
 }
