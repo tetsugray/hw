@@ -3,10 +3,10 @@ div.find_form
     div.find_form__datepicker
         div.find_form__datepicker_arrival
             h3 прибытие
-            input(class='datepicker-here' placeholder='ДД.ММ.ГГГГ')
+            input(class='datepicker-here' type='text' placeholder='ДД.ММ.ГГГГ')
         div.find_form__datepicker_departure
             h3 прибытие
-            input(class='datepicker-here' placeholder='ДД.ММ.ГГГГ')
+            input(class='datepicker-here' type='text' placeholder='ДД.ММ.ГГГГ')
     div.find_form__guest
         h3 гости
         div.iqdropdown
@@ -21,4 +21,7 @@ div.find_form
                 div(class='iqdropdown-menu-option' data-id='item2')
                     div
                         p.iqdropdown-item младенцы
+    div.find_form__button
+        form(name='find')
+            button(class='button__color') Подобрать номер
     
