@@ -1,10 +1,12 @@
+include /src/layouts/pug/mixin.pug
+
 div(class='')
     h3 #888 люкс
     p 9 990Р в сутки
 div.reservation__date
     h3 прибытие
-    input(class='resservation__date_arrival datepicker-here' type='text' placeholder='ДД.ММ.ГГГГ')
-    input(class='resservation__date_departure datepicker-here' type='text' placeholder='ДД.ММ.ГГГГ')
+    +texttype('ДД.ММ.ГГГГ')(class='resservation__date_arrival datepicker-here')
+    +texttype('ДД.ММ.ГГГГ')(class='resservation__date_departure datepicker-here')
 div.reservation__guest
     h3 гости
     div.iqdropdown
@@ -32,4 +34,4 @@ div.reservation__sum
     h2 Итого
     h2 38 081₽
 div.reservation__done
-    button(class='reservation__done_button button_color') забронировать
+    +fbutton('reservation', 'забронировать')(class='reservation__done_button button_color')

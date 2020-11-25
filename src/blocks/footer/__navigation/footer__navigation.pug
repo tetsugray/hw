@@ -37,6 +37,6 @@ div.footer__navigation_subs
         p Получайте специальные предложения и новости сервиса
     div.footer__navigation_form
         form(name='subscription')
-            input(type='text' placeholder='Email' required)
+            +texttype('Email')(class='')
             button
                 img(src='/src/images/svg/arrow.svg')

@@ -8,11 +8,15 @@ mixin select(name,link,first)
         option(value=link disabled selected)=name
     else
         option(value=link)=name
-
+    
 //- кнопка
-mixin but(name)
-    form
-        button=name
+mixin button(bname)
+    button&attributes(attributes)=bname
+
+//- кнопка с формой
+mixin fbutton(fname, bname)
+    form(name=fname)
+        button&attributes(attributes)=bname
 
 //- изображение
 mixin image(src,alt)
@@ -22,3 +26,7 @@ mixin image(src,alt)
 mixin smm(link,src,alt)
     a(href=link)
         img(src=src alt=alt)
+
+//- поле ввода текста
+mixin texttype(placeholder)
+    input(type='text' placeholder=placeholder)&attributes(attributes)

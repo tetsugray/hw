@@ -1,9 +1,11 @@
+include /src/layouts/pug/mixin.pug
+
 div.login
     h1 Войти
     div.login__enterform
-        input(class='login__enterform_mail' type='text' placeholder='Email')
-        input(class='login__enterform_password' type='text' placeholder='Пароль')
-        button(class='button__color login__enterform_button') Войти
+        +texttype('Email')(class='login__enterform_mail')
+        +texttype(''Пароль'')(class='login__enterform_password')
+        +fbutton('enter', 'Войти')(class='button__color login__enterform_button') 
     div.login__registration
         p Нет аккаунта на Toxin?
-        button(class='button__white login__registration_button') Создать
+        +fbutton('goreg', 'Создать')(class='button__white login__registration_button') Создать
