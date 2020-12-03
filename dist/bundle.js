@@ -219,7 +219,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$('.datepicker-here').datepicker({\r\n    minDate: new Date(),\r\n    range: true,\r\n    multipleDatesSeparator: '-',\r\n    clearButton: true,\r\n});\r\n\r\n$(document).ready(() => {\r\n    $('.iqdropdown').iqDropdown();\r\n  });\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/test/test.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$('.datepicker-here').datepicker({\r\n    minDate: new Date(),\r\n    clearButton: true,\r\n});\r\n\r\n$('#filter').datepicker({\r\n    minDate: new Date(),\r\n    range: true,\r\n    multipleDatesSeparator: '-',\r\n    clearButton: true,\r\n});\r\n\r\n$(document).ready(() => {\r\n    $('.iqdropdown').iqDropdown();\r\n  });\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/test/test.js?");
 
 /***/ })
 

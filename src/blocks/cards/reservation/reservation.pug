@@ -5,8 +5,8 @@ div(class='')
     p 9 990Р в сутки
 div.reservation__date
     h3 прибытие
-    +texttype('ДД.ММ.ГГГГ')(class='resservation__date_arrival datepicker-here')
-    +texttype('ДД.ММ.ГГГГ')(class='resservation__date_departure datepicker-here')
+    +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_arrival')
+    +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_departure')
 div.reservation__guest
     h3 гости
     div.iqdropdown

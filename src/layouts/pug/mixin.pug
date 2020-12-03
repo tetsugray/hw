@@ -30,3 +30,22 @@ mixin smm(link,src,alt)
 //- поле ввода текста
 mixin texttype(placeholder)
     input(type='text' placeholder=placeholder)&attributes(attributes)
+
+//- календарь
+mixin datepicker(placeholder)
+    input(class='datepicker-here' type='text' placeholder=placeholder)&attributes(attributes)
+
+//- переключатели
+mixin radio(name, rname)
+    input(type='radio' name=name value=rname)&attributes(attributes)
+    | #{rname}
+
+//- чекбокс
+mixin check(name, cname)
+    input(type='checkbox' name=name value=cname)&attributes(attributes)
+    | #{cname}
+
+//- чекбокс с пояснениями
+mixin richcheck(name, cname, description)
+    input(type='checkbox' name=name value=cname)&attributes(attributes)
+    | #{cname} #[p #{description}]
