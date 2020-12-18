@@ -1,0 +1,28 @@
+@import '/src/blocks/form-elements/button/white/white_unactive/white_unactive.scss';
+@import '/src/blocks/form-elements/button/white/white_button.scss';
+@import '/src/blocks/form-elements/button/color/color_unactive/color_unactive.scss';
+@import '/src/blocks/form-elements/button/color/color_button.scss';
+
+button {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    height: 44px;
+    width: 99px;
+};
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 218px;
+    height: 195px;
+}
+.buttoncolor_group,
+.buttonwhite_group,
+.buttonnoback_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,6 +1,10 @@
 @import '/src/fonts/fonts.scss';
 
 @import '/src/pages/ui-kit/colors_type/colors_type.scss';
+@import '/src/blocks/form-elements/form-element.scss';
+@import '/src/blocks/form-elements/button/button.scss';
+@import '/src/blocks/form-elements/button/unborder/unborder_unactive/unborder_unactive.scss';
+@import '/src/blocks/form-elements/button/unborder/unborder.scss';
 
 @import '/src/blocks/footer/__creative/footer__creative.scss';
 @import '/src/blocks/footer/footer.scss';

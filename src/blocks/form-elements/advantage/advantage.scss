@@ -1,0 +1,25 @@
+.advantage {
+    display: flex;
+    flex-direction: column;
+    width: 291px;
+}
+
+.first_advantage,
+.second_advantage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-left: 10px;
+    }
+}
+.firstimg,
+.secondimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+}

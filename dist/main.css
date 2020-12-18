@@ -169,6 +169,97 @@ p {
   padding: 67px 191px 130px 150px;
 }
 
+.advantage {
+  display: flex;
+  flex-direction: column;
+  width: 291px;
+}
+
+.first_advantage,
+.second_advantage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.first_advantage p,
+.second_advantage p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 10px;
+}
+
+.firstimg,
+.secondimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+}
+
+.button__white {
+  position: relative;
+  color: #BC9CFF;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+}
+
+.button__white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  border-radius: 22px;
+}
+
+.button__color {
+  color: #FFFFFF;
+  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  border: none;
+  border-radius: 22px;
+}
+
+button {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 44px;
+  width: 99px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 218px;
+  height: 195px;
+}
+
+.buttoncolor_group,
+.buttonwhite_group,
+.buttonnoback_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.unborder_button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
 .footer__copyright_creative {
   width: 560px;
   display: flex;
