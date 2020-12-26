@@ -2,6 +2,9 @@
 @import '/src/blocks/form-elements/button/white/white_button.scss';
 @import '/src/blocks/form-elements/button/color/color_unactive/color_unactive.scss';
 @import '/src/blocks/form-elements/button/color/color_button.scss';
+@import '/src/blocks/form-elements/button/unborder/unborder_unactive/unborder_unactive.scss';
+@import '/src/blocks/form-elements/button/unborder/unborder.scss';
+@import '/src/blocks/form-elements/button/pay/pay.scss';
 
 button {
     font-family: 'Montserrat';
@@ -11,7 +14,7 @@ button {
     text-transform: uppercase;
     height: 44px;
     width: 99px;
-};
+}
 .buttons {
     display: flex;
     flex-direction: column;
@@ -20,9 +23,12 @@ button {
     height: 195px;
 }
 .buttoncolor_group,
-.buttonwhite_group,
-.buttonnoback_group {
+.buttonwhite_group {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.buttonnoback_group {
+    display: flex;
+    flex-direction: row;
 }

@@ -27,11 +27,11 @@ module.exports = {
     },
     //массив с плагинами
     plugins: [
-        new HTMLWebpackPlugin({
-            //создаваемый хтмл будет основан на конкретном
-            filename: 'check.html',
-            template: path.resolve(__dirname, './src/test/check.pug')
-        }),
+       new HTMLWebpackPlugin ({
+           filename: 'check.html',
+           //создаваемый хтмл будет основан на конкретном
+           template: './src/test/check.pug'
+       }),
         //чистит папку dist
         new CleanWebpackPlugin,
         new MiniCssExtractPlugin({

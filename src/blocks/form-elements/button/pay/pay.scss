@@ -1,0 +1,9 @@
+.pay_button {
+    width: 320px;
+    height: 44px;
+}
+.pay_button::after {
+    content: url(/src/images/svg/arrow_white.svg);
+    float: right;
+    margin-right: 10px;
+}

@@ -1,0 +1,4 @@
+.button__white_unactive::before {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

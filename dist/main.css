@@ -25,12 +25,12 @@
   line-height: 10px;
 }
 .colors__text p {
-  font-family: "Quicksand";
+  font-family: "Montserrat";
   font-size: 19px;
   margin-bottom: 33px;
 }
 .colors__text h2 {
-  font-family: "Quicksand";
+  font-family: "Montserrat";
   font-style: bold;
   font-size: 19px;
 }
@@ -197,6 +197,11 @@ p {
   width: 48px;
 }
 
+.button__white_unactive::before {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 .button__white {
   position: relative;
   color: #BC9CFF;
@@ -218,11 +223,42 @@ p {
   border-radius: 22px;
 }
 
+.button__color_unactive {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 .button__color {
   color: #FFFFFF;
   background: linear-gradient(to top, #8BA4F9, #BC9CFF);
   border: none;
   border-radius: 22px;
+}
+
+.unborder_button_unactive {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.unborder_button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #bc9cff;
+}
+
+.pay_button {
+  width: 320px;
+  height: 44px;
+}
+
+.pay_button::after {
+  content: url(7555ed8dda046bc9eab794c947d63be6.svg);
+  float: right;
+  margin-right: 10px;
 }
 
 button {
@@ -244,20 +280,73 @@ button {
 }
 
 .buttoncolor_group,
-.buttonwhite_group,
-.buttonnoback_group {
+.buttonwhite_group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.unborder_button {
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
+.buttonnoback_group {
+  display: flex;
+  flex-direction: row;
+}
+
+.textfield-hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  background-color: white;
+}
+
+.textfield-hover::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.textfield-masked::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.subscription-button {
+  width: 223px;
+}
+
+.subscription-arrow {
+  width: 44px;
+}
+
+.subscription-button::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+input {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+}
+
+input::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.textfield input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.textfield-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: content;
+  height: 30px;
+  width: 320px;
+  font-family: "Montserrat";
+}
+.textfield-name h3,
+.textfield-name p {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 .footer__copyright_creative {
@@ -533,10 +622,8 @@ button {
 body {
   max-width: 1920px;
   min-width: 320px;
-  background-color: #c2b9b9;
+  background-color: #f8f1f1;
   padding: 0;
   border: 0;
-  margin: 0;
-  font-size: 14px;
-  font-family: "Montserrat";
+  margin: 0px;
 }

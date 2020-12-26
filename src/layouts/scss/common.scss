@@ -2,9 +2,6 @@
 
 @import '/src/pages/ui-kit/colors_type/colors_type.scss';
 @import '/src/blocks/form-elements/form-element.scss';
-@import '/src/blocks/form-elements/button/button.scss';
-@import '/src/blocks/form-elements/button/unborder/unborder_unactive/unborder_unactive.scss';
-@import '/src/blocks/form-elements/button/unborder/unborder.scss';
 
 @import '/src/blocks/footer/__creative/footer__creative.scss';
 @import '/src/blocks/footer/footer.scss';
@@ -14,10 +11,8 @@
 body {
     max-width: 1920px;
     min-width: 320px;
-    background-color: #c2b9b9;
+    background-color: #f8f1f1;
     padding: 0;
     border: 0;
-    margin: 0;
-    font-size: 14px;
-    font-family: 'Montserrat';
+    margin: 0px;
 }
