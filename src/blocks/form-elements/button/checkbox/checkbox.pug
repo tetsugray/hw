@@ -1,5 +1,7 @@
 include /src/layouts/pug/mixin.pug
 
-+check('allow', 'Можно курить')
-+check('allow', 'Можно с питомцами')
-+check('allow', 'Можно пригласить гостей (до 10 человек)')
+h3 checkbox buttons
+div.checkbox-example
+    +check('allow', 'Можно курить')(class='checkbox-button')
+    +check('allow', 'Можно с питомцами')(class='checkbox-button' checked)
+    +check('allow', 'Можно пригласить гостей (до 10 человек)')(class='checkbox-button' checked)

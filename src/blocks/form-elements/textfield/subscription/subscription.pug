@@ -2,6 +2,6 @@ include /src/layouts/pug/mixin.pug
 
 div.textfield-name
     h3 subscription text field
-+texttype('Email')(class='subscription-button')
-            button(class='subscription-arrow')
-                img(src='/src/images/svg/arrow_color.svg')
+div.subscription-button_full
+    +texttype('Email')(class='subscription-button')
+    input(type='submit' class='subscription-button_submit' value='')

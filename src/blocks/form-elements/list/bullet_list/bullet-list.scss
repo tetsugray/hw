@@ -1,0 +1,14 @@
+.bullet-list {
+    ul {
+        width: 292px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        //- list-style: none;
+    }
+}
+
+li::marker {
+    color: rgba(31, 32, 65, 0.25);
+}

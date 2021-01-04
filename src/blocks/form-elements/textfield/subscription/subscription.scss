@@ -1,8 +1,26 @@
+
+.subscription-button_full{
+    display: flex;
+    flex-direction: row;
+    width: 267px;
+    height: 46px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+}
 .subscription-button {
     width: 223px;
+    height: 44px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
 }
-.subscription-arrow {
+.subscription-button_submit {
     width: 44px;
+    background: url(/src/images/svg/arrow_color.svg) no-repeat 50% 50%;
+    background-color: white;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
 }
 .subscription-button::placeholder {
     color: rgba(31, 32, 65, 0.25);

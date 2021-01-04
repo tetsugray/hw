@@ -1,4 +1,5 @@
 include /src/layouts/pug/mixin.pug
-
-+radio('sex', 'Мужчина')
-+radio('sex', 'Женщина')
+h3 radio buttons
+div.radio-example
+    +radio('sex', 'Мужчина')(class='radio-button' checked)
+    +radio('sex', 'Женщина')(class='radio-button')

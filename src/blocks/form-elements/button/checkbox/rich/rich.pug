@@ -1,4 +1,10 @@
 include /src/layouts/pug/mixin.pug
 
-+richcheck('rich', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
-+richcheck('rich', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+h3 rich checkbox button
+div.rich-checkbox
+    +check('rich', 'Широкий коридор')(class='checkbox-button checkbox-button_rich')
+    div.rich-checkbox_text
+        p Ширина коридоров в номере не менее 91 см.
+    +check('rich', 'Помощник для инвалидов')(class='checkbox-button checkbox-button_rich')
+    div.rich-checkbox_text
+        p На 1 этаже вас встретит специалист и проводит до номера.
