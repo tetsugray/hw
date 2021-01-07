@@ -44,3 +44,8 @@ mixin radio(name, rname)
 mixin check(name, cname)
     input(type='checkbox' name=name value=cname id=cname)&attributes(attributes)
     label(for=cname)=cname
+
+//- рейт
+mixin rate(name, rname)
+    input(type='radio' name=name value=rname id=rname)&attributes(attributes)
+    label(for=rname)

@@ -425,6 +425,35 @@ label {
   border: 1px solid #bc9cff;
 }
 
+.rating > input {
+  display: none;
+}
+
+.rate-button + label::before {
+  content: url(ba295ad459417d5f157ea6aeb689f74a.svg);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 120px;
+  height: 24px;
+}
+
+.rate-button:checked ~ label::before,
+.rating:not(:checked) > label:hover::before,
+.rating:not(:checked) > label:hover ~ label::before {
+  content: url(6e74da705e57d1046996312dd5208507.svg);
+}
+
+.rating_example {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 button {
   font-family: "Montserrat";
   font-weight: bold;
