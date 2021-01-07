@@ -1,16 +1,6 @@
 @font-face {
-  font-family: "opensans";
-  src: url(1b0809d519837cb7aad36a73433f655c.ttf);
-  src: url(469db7e601bc2bc9cce399bb74d940be.woff);
-  src: url(81a6c4e3ea91faf749caf89d2d1c803e.svg);
-}
-@font-face {
   font-family: "Montserrat";
   src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf);
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(cffc279022b0d87c571dff78071828f9.ttf);
 }
 .colors {
   display: flex;
@@ -219,7 +209,7 @@ p {
   left: 0;
   z-index: -1;
   margin: -2px;
-  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
   border-radius: 22px;
 }
 
@@ -230,7 +220,7 @@ p {
 
 .button__color {
   color: #FFFFFF;
-  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
   border: none;
   border-radius: 22px;
 }
@@ -284,6 +274,15 @@ p {
   font-family: "Montserrat";
   font-size: 12px;
   line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.checkbox_expandable {
+  width: 266px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -375,6 +374,55 @@ label {
 .radio-example {
   width: 221px;
   height: 24px;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button_full {
+  display: flex;
+  flex-direction: row;
+}
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 40px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+  vertical-align: top;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.toggle-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(31, 32, 65, 0.25);
+  left: 4px;
+  top: 3px;
+  transform: translateX(0);
+}
+
+.toggle-button:checked::after {
+  transform: translateX(calc(100% + 4px));
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
+}
+
+.toggle-button:checked {
+  border: 1px solid #bc9cff;
 }
 
 button {
@@ -493,7 +541,7 @@ input::placeholder {
 
 li::marker {
   color: rgba(31, 32, 65, 0.25);
-  font-size: 10px;
+  font-size: 1.5rem;
 }
 
 .footer__copyright_creative {
@@ -726,7 +774,7 @@ li::marker {
 }
 .header__user_nonauth .button__color {
   color: #FFFFFF;
-  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
   border: none;
   border-radius: 22px;
 }
@@ -749,7 +797,7 @@ li::marker {
   left: 0;
   z-index: -1;
   margin: -2px;
-  background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
   border-radius: 22px;
 }
 .header__user_nonauth .button__white_login {

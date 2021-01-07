@@ -1,0 +1,10 @@
+include /src/layouts/pug/mixin.pug
+
+h3 expandable checkbox list
+div.checkbox_expandable
+    +check('expandapble', 'Завтрак')(class='checkbox-button')
+    +check('expandapble', 'Письменный стол')(class='checkbox-button' checked)
+    +check('expandapble', 'Стул для кормления')(class='checkbox-button' checked)
+    +check('expandapble', 'Кроватка')(class='checkbox-button' checked)
+    +check('expandapble', 'Телевизор')(class='checkbox-button')
+    +check('expandapble', 'Шампунь')(class='checkbox-button')

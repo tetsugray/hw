@@ -1,4 +1,8 @@
 include /src/layouts/pug/mixin.pug
 
-+check('special', 'Получать спецпредложения')
-+check('special', 'Получать спецпредложения')
+h3 toggle
+div.toggle
+    div.toggle-button_full
+        +check('special', 'Получать спецпредложения')(class='toggle-button' checked)
+    div.toggle-button_full
+        +check('special', 'Получать спецпредложения')(class='toggle-button')
