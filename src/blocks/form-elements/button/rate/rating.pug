@@ -2,14 +2,14 @@ include /src/layouts/pug/mixin.pug
 h3 rate button
 .rating_example
     .rating
-        +rate('rating', '1')(class='rate-button')
-        +rate('rating', '2')(class='rate-button' checked)
-        +rate('rating', '3')(class='rate-button')
-        +rate('rating', '4')(class='rate-button')
         +rate('rating', '5')(class='rate-button')
+        +rate('rating', '4')(class='rate-button' checked)
+        +rate('rating', '3')(class='rate-button')
+        +rate('rating', '2')(class='rate-button')
+        +rate('rating', '1')(class='rate-button')
     .rating
-        +rate('other-rating', '1')(class='rate-button' checked)
-        +rate('other-rating', '2')(class='rate-button')
-        +rate('other-rating', '3')(class='rate-button')
+        +rate('other-rating', '5')(class='rate-button' checked)
         +rate('other-rating', '4')(class='rate-button')
-        +rate('other-rating', '5')(class='rate-button')
+        +rate('other-rating', '3')(class='rate-button')
+        +rate('other-rating', '2')(class='rate-button')
+        +rate('other-rating', '1')(class='rate-button')

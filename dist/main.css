@@ -286,6 +286,21 @@ p {
   color: rgba(31, 32, 65, 0.5);
 }
 
+.expandable_closed {
+  line-height: 44px;
+  padding-bottom: 20px;
+}
+
+.expandable_closed::after {
+  content: url(c0a41c1594ab473eb6d7ae4a2b209449.svg);
+  padding-left: 48px;
+}
+
+.expandable_open::after {
+  content: url(b3fd1a4a1f306b87297312c8ef89622e.svg);
+  padding-left: 48px;
+}
+
 .checkbox-button {
   position: absolute;
   z-index: -1;
@@ -334,9 +349,7 @@ label {
 }
 
 .radio-button {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  display: none;
 }
 
 .radio-button + label {
@@ -397,7 +410,6 @@ label {
   margin-right: 10px;
   vertical-align: top;
   outline: none;
-  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -452,6 +464,97 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.like-example {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.like-button-full {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.like-button + label::before {
+  content: url(521d319ee4d28d3f4355d188bb7c3fef.svg);
+  margin: 5px;
+}
+
+.like-button:checked + label::before {
+  content: url(acdbe098fa549bbb607f0a7dd8d75cad.svg);
+  color: #bc9cff;
+}
+
+.like-button-full > input {
+  display: none;
+}
+
+.like-button-full > label {
+  font-family: "Montserrat";
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.like-button-full_unactive {
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.like-button-full_active {
+  color: #bc9cff;
+  border: 1px solid #bc9cff;
+}
+
+.pagination {
+  width: 241px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pagination p {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 40px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.actual-page {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #8ba4f9, #bc9cff);
+  text-align: center;
+  line-height: 40px;
+}
+
+p.actual-page {
+  color: white;
+  font-weight: bold;
+}
+
+.next-page {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #66d2ea, #6fcf97);
+  display: inline-flex;
+  justify-content: baseline;
+}
+.next-page img {
+  margin: 0 auto;
+}
+
+.other-page {
+  width: 40px;
+  height: 40px;
 }
 
 button {
@@ -571,6 +674,21 @@ input::placeholder {
 li::marker {
   color: rgba(31, 32, 65, 0.25);
   font-size: 1.5rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer__copyright_creative {

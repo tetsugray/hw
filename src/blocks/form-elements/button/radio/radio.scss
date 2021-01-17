@@ -1,7 +1,5 @@
 .radio-button {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+    display: none;
 }
 .radio-button+label {
     display: inline-flex;

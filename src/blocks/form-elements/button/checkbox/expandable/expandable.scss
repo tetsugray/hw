@@ -6,3 +6,15 @@
     justify-content: space-between;
     color: rgba(31, 32, 65, 0.5);
 }
+.expandable_closed {
+    line-height: 44px;
+    padding-bottom: 20px;
+}
+.expandable_closed::after {
+    content: url('/src/images/svg/dropdown.svg');
+    padding-left: 48px;
+}
+.expandable_open::after {
+    content: url('/src/images/svg/dropup.svg');
+    padding-left: 48px;
+}

@@ -1,0 +1,37 @@
+.like-example {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90px;
+}
+.like-button-full {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+.like-button+label::before {
+    content: url('/src/images/svg/like_border.svg');
+    margin: 5px;
+}
+.like-button:checked+label::before {
+    content: url('/src/images/svg/like.svg');
+    color: rgba(188, 156, 255, 1);
+}
+.like-button-full > input {
+    display: none;
+}
+.like-button-full > label {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 12px;
+}
+.like-button-full_unactive {
+    color: rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.like-button-full_active {
+    color: rgba(188, 156, 255, 1);
+    border: 1px solid rgba(188, 156, 255, 1);
+}

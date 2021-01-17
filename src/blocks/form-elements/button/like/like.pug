@@ -1,0 +1,8 @@
+include /src/layouts/pug/mixin.pug
+
+h3 like button
+div.like-example
+    div(class='like-button-full like-button-full_unactive')
+        +radio('like', '2')(class='like-button')
+    div(class='like-button-full like-button-full_active')
+        +radio('like', '12')(class='like-button' checked)
