@@ -1,0 +1,6 @@
+@import '/src/blocks/form-elements/dropdown/date_dropdown/date/standart.scss';
+@import '/src/blocks/form-elements/dropdown/date_dropdown/filter/filter.scss';
+
+.dropdown {
+    background: white url('/src/images/svg/arrow_dropdown.svg') no-repeat calc(100% - 15px) 18px;
+}

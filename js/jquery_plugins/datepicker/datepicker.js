@@ -48,16 +48,19 @@
 
             todayButton: false,
             clearButton: false,
+            // confirmButton: false,
 
             showEvent: 'focus',
             autoClose: false,
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-            nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            // prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
+            // nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            prevHtml: '<img src="/src/images/svg/calendar-arrow_back.svg">',
+            nextHtml: '<img src="/src/images/svg/calendar-arrow_forward.svg">',
             navTitles: {
-                days: 'MM, <i>yyyy</i>',
+                days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
                 years: 'yyyy1 - yyyy2'
             },
@@ -600,6 +603,7 @@
             }
         },
 
+        
         /**
          * Updates datepicker options
          * @param {String|Object} param - parameter's name to update. If object then it will extend current options
@@ -1481,6 +1485,7 @@
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
             today: 'Сегодня',
             clear: 'Очистить',
+            // confirm: 'Применить',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1
@@ -1850,6 +1855,9 @@
             if (this.opts.clearButton) {
                 this._addButton('clear')
             }
+            // if (this.opts.confirmButton) {
+            //     this._addButton('confirm')
+            // }
         },
 
         _render: function () {
