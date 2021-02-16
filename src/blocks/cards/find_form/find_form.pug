@@ -1,17 +1,17 @@
 include /src/layouts/pug/mixin.pug
 
-div.find_form
+div.find-form
     h1 Найдём номера под ваши пожелания
-    div.find_form__datepicker
+    div.find-form__datepicker
         div.find_form__datepicker_arrival
             h3 прибытие
-            +datepicker('ДД.ММ.ГГГГ')
+            +datepicker('ДД.ММ.ГГГГ')(class='textfield date dropdown dropdown_date')
         div.find_form__datepicker_departure
-            h3 прибытие
-            +datepicker('ДД.ММ.ГГГГ')
+            h3 выезд
+            +datepicker('ДД.ММ.ГГГГ')(class='textfield date dropdown dropdown_date')
     div.find_form__guest
         h3 гости
-        div.iqdropdown
+        div(class='iqdropdown textfield')
             p(class='iqdropdown-selection' data-seletion-text='гостей' data-text-plural='Сколько гостей')
             div.iqdropdown-menu
                 div(class='iqdropdown-menu-option' data-id='item1')
@@ -24,5 +24,5 @@ div.find_form
                     div
                         p.iqdropdown-item младенцы
     div.find_form__button
-        +fbutton('find', 'Подобрать номер')(class='button__color') 
+        +fbutton('find', 'Подобрать номер')(class='button__color pay_button') 
     

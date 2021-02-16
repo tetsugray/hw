@@ -4,8 +4,8 @@ div.login
     h1 Войти
     div.login__enterform
         +texttype('Email')(class='login__enterform_mail')
-        +texttype(''Пароль'')(class='login__enterform_password')
-        +fbutton('enter', 'Войти')(class='button__color login__enterform_button') 
+        +texttype('Пароль')(class='login__enterform_password')
+        +fbutton('enter', 'Войти')(class='button__color login__enterform_button pay_button') 
     div.login__registration
         p Нет аккаунта на Toxin?
-        +fbutton('goreg', 'Создать')(class='button__white login__registration_button') Создать
+        +fbutton('goreg', 'Создать')(class='button__white login__registration_button')

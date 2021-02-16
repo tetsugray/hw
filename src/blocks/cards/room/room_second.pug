@@ -1,12 +1,17 @@
 include /src/layouts/pug/mixin.pug
 
-div.room_first__image
-    +image('#', 'standartroom')
-div(class='room__type room__type_second')
-    h2 №840
-    p 9 990₽ в сутки
-div(class='room__rating room__rating_second')
-    div.room__rating_star
-        
-    div.room__rating_review
-        p 65 Отзывов
+div.room-second
+    div.room_second__image
+        +image('/src/images/img/search/image_2.png', 'standartroom')
+    div(class='room__type room__type_second')
+        h2 № 840
+        p 9 990₽ в сутки
+    div(class='room__rating room__rating_second')
+        div.rating
+            +rate('rating2', '5')(class='rate-button')
+            +rate('rating2', '4')(class='rate-button' checked)
+            +rate('rating2', '3')(class='rate-button')
+            +rate('rating2', '2')(class='rate-button')
+            +rate('rating2', '1')(class='rate-button')
+        div.room__rating_review
+            p 65 Отзывов

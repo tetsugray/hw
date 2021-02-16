@@ -1,0 +1,21 @@
+.reservation {
+    width: 380px;
+    background-color: white;
+    padding: 40px 30px 30px 30px;
+    margin: 20px;
+    border: 1px solid hotpink;
+}
+.reservation__date,
+.room,
+.reservation__price,
+.reservation__sum {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reservation__date_arrival,
+.reservation__date_departure {
+    display: flex;
+    flex-direction: column;
+}

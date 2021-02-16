@@ -1,0 +1,23 @@
+.registration {
+    margin: 20px;
+    padding: 40px 30px 30px 30px;
+    width: 380px;
+    background: white;
+    border: 1px solid hotpink;
+}
+.registration__go-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.registration__name,
+.registration__login {
+    input {
+        margin-bottom: 10px;
+    }
+}
+
+.registration__pay {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

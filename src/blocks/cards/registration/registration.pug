@@ -1,14 +1,13 @@
 include /src/layouts/pug/mixin.pug
 
 div.registration
+    h1 Регистрация аккаунта
     div.registration__name
         +texttype('Имя')(class='registration__name_input')
         +texttype('Фамилия')(class='registration__name_input')
     div.registration__sex
-        input(class='registration__sex_input' type='radio' name='sex')
-        |Мужчина
-        input(class='registration__sex_input' type='radio' name='sex')
-        |Женщина
+        +radio('sex', 'Мужчина')(class='radio-button' checked)
+        +radio('sex', 'Женщина')(class='radio-button')
     div.registration__birth
         h3 дата рождения
         +texttype('ДД.ММ.ГГГГ')(class='registration__birth_input')
@@ -17,10 +16,9 @@ div.registration
         +texttype('E-mail')(class='registration__login_input')
         +texttype('Пароль')(class='registration__login_input')
     div.registration__sub
-        input(class='registration__sub_input' type='checkbox')
-        |Получать спецпредложения
+        +check('special', 'Получать спецпредложения')(class='toggle-button registration__sub_input')
     div.registration__pay
-        +fbutton('pay', 'Перейти к оплате')(class='registration__pay_button button__color')
-    div.registration__login
+        +fbutton('pay', 'Перейти к оплате')(class='registration__pay_button button__color pay_button')
+    div.registration__go-login
         p Уже есть аккаунт на Toxin
         +fbutton('gologin', 'Войти')(class='registration__login_button button__white')

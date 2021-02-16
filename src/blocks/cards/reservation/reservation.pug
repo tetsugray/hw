@@ -1,37 +1,41 @@
 include /src/layouts/pug/mixin.pug
 
-div(class='')
-    h3 #888 люкс
-    p 9 990Р в сутки
-div.reservation__date
-    h3 прибытие
-    +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_arrival')
-    +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_departure')
-div.reservation__guest
-    h3 гости
-    div.iqdropdown
-            p(class='iqdropdown-selection' data-seletion-text='гостей' data-text-plural='Сколько гостей')
-            div.iqdropdown-menu
-                div(class='iqdropdown-menu-option' data-id='item1')
-                    div
-                        p.iqdropdown-item взрослые
-                div(class='iqdropdown-menu-option' data-id='item2')
-                    div
-                        p.iqdropdown-item дети
-                div(class='iqdropdown-menu-option' data-id='item2')
-                    div
-                        p.iqdropdown-item младенцы
-div.reservation__price
-    div.reservation__price_description
-        p 9 990₽ х 4 суток
-        p Сбор за услуги: скидка 2 179₽
-        p Сбор за дополнительные услуги
-    div.reservation__price_value
-        p 39 960₽
-        p 0₽
-        p 300₽
-div.reservation__sum
-    h2 Итого
-    h2 38 081₽
-div.reservation__done
-    +fbutton('reservation', 'забронировать')(class='reservation__done_button button_color')
+div.reservation
+    div(class='room')
+        h3 #888 люкс
+        p 9 990₽ в сутки
+    div.reservation__date
+        div.reservation__date_arrival
+            h3 прибытие
+            +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_arrival textfield date dropdown dropdown_date')
+        div.reservation__date_departure
+            h3 выезд
+            +datepicker('ДД.ММ.ГГГГ')(class='resservation__date_departure textfield date dropdown dropdown_date')
+    div.reservation__guest
+        h3 гости
+        div(class='iqdropdown textfield')
+                p(class='iqdropdown-selection' data-seletion-text='гостей' data-text-plural='Сколько гостей')
+                div.iqdropdown-menu
+                    div(class='iqdropdown-menu-option' data-id='item1')
+                        div
+                            p.iqdropdown-item взрослые
+                    div(class='iqdropdown-menu-option' data-id='item2')
+                        div
+                            p.iqdropdown-item дети
+                    div(class='iqdropdown-menu-option' data-id='item2')
+                        div
+                            p.iqdropdown-item младенцы
+    div.reservation__price
+        div.reservation__price_description
+            p 9 990₽ х 4 суток
+            p Сбор за услуги: скидка 2 179₽
+            p Сбор за дополнительные услуги
+        div.reservation__price_value
+            p 39 960₽
+            p 0₽
+            p 300₽
+    div.reservation__sum
+        h2 Итого
+        h2 38 081₽
+    div.reservation__done
+        +fbutton('reservation', 'забронировать')(class='reservation__done_button button__color pay_button')

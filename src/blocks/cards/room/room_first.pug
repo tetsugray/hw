@@ -1,12 +1,17 @@
 include /src/layouts/pug/mixin.pug
 
-div.room_first__image
-    +image('#', 'luxroom')
-div(class='room__type room__type_first')
-    h2 №888 люкс
-    p 9 990₽ в сутки
-div(class='room__rating room__rating_first')
-    div.room__rating_star
-        
-    div.room__rating_review
-        p 145 Отзывов
+div.room-first
+    div.room_first__image
+        +image('/src/images/img/search/image_1.png', 'luxroom')
+    div(class='room__type room__type_first')
+        h2 № 888 люкс
+        p 9 990₽ в сутки
+    div(class='room__rating room__rating_first')
+        div.rating
+            +rate('rating', '5')(class='rate-button' checked)
+            +rate('rating', '4')(class='rate-button')
+            +rate('rating', '3')(class='rate-button')
+            +rate('rating', '2')(class='rate-button')
+            +rate('rating', '1')(class='rate-button')
+        div.room__rating_review
+            p 145 Отзывов

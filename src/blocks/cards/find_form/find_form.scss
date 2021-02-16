@@ -1,0 +1,24 @@
+.find-form {
+    width: 380px;
+    height: 374px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 20px 30px 30px 30px;
+    margin: 20px;
+    background: white;
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
+.find-form__datepicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.find_form__button {
+    padding-top: 10px;
+}

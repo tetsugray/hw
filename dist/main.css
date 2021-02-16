@@ -197,20 +197,7 @@ p {
   color: #BC9CFF;
   background-color: #FFFFFF;
   border-radius: 20px;
-  border: none;
-}
-
-.button__white::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  background: linear-gradient(to top, #8ba4f9, #bc9cff);
-  border-radius: 22px;
+  border: 1px solid #8BA4F9;
 }
 
 .button__color_unactive {
@@ -1004,6 +991,11 @@ li::marker {
   justify-content: space-between;
 }
 
+.calendar {
+  margin: 20px;
+  border: 1px solid hotpink;
+}
+
 /* .example {
     display: flex;
     flex-direction: row;
@@ -1062,6 +1054,120 @@ li::marker {
         width: 50%;
     }
 }*/
+.find-form {
+  width: 380px;
+  height: 374px;
+  padding: 20px 30px 30px 30px;
+  margin: 20px;
+  background: white;
+}
+.find-form h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.find-form__datepicker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.find_form__button {
+  padding-top: 10px;
+}
+
+.login {
+  margin: 20px;
+  width: 380px;
+  background-color: white;
+  border: 1px solid hotpink;
+  padding: 40px 30px 30px 30px;
+}
+
+.login__registration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login__enterform input {
+  margin-bottom: 20px;
+}
+
+.registration {
+  margin: 20px;
+  padding: 40px 30px 30px 30px;
+  width: 380px;
+  background: white;
+  border: 1px solid hotpink;
+}
+
+.registration__go-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.registration__name input,
+.registration__login input {
+  margin-bottom: 10px;
+}
+
+.registration__pay {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.reservation {
+  width: 380px;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  margin: 20px;
+  border: 1px solid hotpink;
+}
+
+.reservation__date,
+.room,
+.reservation__price,
+.reservation__sum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reservation__date_arrival,
+.reservation__date_departure {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-first,
+.room-second {
+  border: 1px solid hotpink;
+  margin: 20px;
+}
+
+.room__type,
+.room__rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column,
+.second-column,
+.third-column {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   max-width: 1920px;
   min-width: 320px;

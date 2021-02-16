@@ -1,0 +1,18 @@
+@import '/src/blocks/cards/calendar/calendar.scss';
+@import '/src/blocks/cards/find_form/find_form.scss';
+@import '/src/blocks/cards/login/login.scss';
+@import '/src/blocks/cards/registration/registration.scss';
+@import '/src/blocks/cards/reservation/reservation.scss';
+@import '/src/blocks/cards/room/room.scss';
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    display: flex;
+    flex-direction: column;
+}
